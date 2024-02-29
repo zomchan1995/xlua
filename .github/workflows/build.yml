@@ -20,7 +20,7 @@ jobs:
           ANDROID_NDK_HOME=$(pwd)/android-ndk-r21b
       - name: Set execute permissions
         run:
-          cd build
+          cd build;
           chmod +x make_android_lua54.sh && chmod +x make_android_lua53.sh  
       - name: Build
         run: |
@@ -51,7 +51,7 @@ jobs:
           ANDROID_NDK_HOME=$(pwd)/android-ndk-r15c
       - name: Set execute permissions
         run: 
-          cd build
+          cd build;
           chmod +x make_android_luajit_arm64.sh   
       - name: Build
         run: |
@@ -70,7 +70,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set execute permissions
         run: 
-          cd build
+          cd build;
           chmod +x make_linux_lua54.sh && chmod +x make_linux64_lua53.sh && chmod +x make_linux64_luajit.sh     
       - name: Build
         run: |
@@ -100,7 +100,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set execute permissions
         run: 
-          cd build
+          cd build;
           chmod +x make_ios_lua54.sh && chmod +x make_ios_lua53.sh && chmod +x make_ios_luajit.sh    
       - name: Build
         run: |
@@ -130,7 +130,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set execute permissions
         run: 
-          cd build
+          cd build;
           chmod +x make_osx_lua54.sh && chmod +x make_osx_lua53.sh && chmod +x make_osx_luajit.sh && chmod +x make_osx_silicon_lua53.sh && chmod +x make_osx_silicon_lua54.sh      
       - name: Build
         run: |
