@@ -6,7 +6,6 @@ on:
       - build/**
       - .github/workflows/build.yml
 
-
 jobs:
   android:
     runs-on: ubuntu-latest
